@@ -1,0 +1,108 @@
+
+/* login , signup form */
+
+.amazon-login{
+  padding: 14px 0 12px;
+  box-shadow: 0px 3px 7px #00000029;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 1;
+}
+
+.amazon-login img{
+  height: 20px;
+}
+
+.login-form-container{
+  padding: 10px 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form{
+
+  width: 577px;
+  margin: auto;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  background-color: whitesmoke;
+  transform: translate(-50%, 0);
+  border-radius: 6px;
+  }
+  
+  
+
+  .bg-img{
+    width: 100%;
+    position: relative;
+  }
+  
+  input {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    background: transparent;
+    outline: none;
+  }
+
+  input::placeholder{
+    color: #20B716;
+  }
+  
+  button {
+    border: none !important;
+    background-color: #20B716 !important;
+    padding: 16px;
+    border-radius: 40px !important;
+    cursor: pointer;
+    color: white !important;
+  }
+
+  .pad1{
+    padding: 16px;
+  }
+
+  .auth-btn{
+    background: #4285F4 0% 0% no-repeat padding-box !important;
+    padding: 5px;
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px !important;
+  }
+
+  .auth-container{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  }
+
+  .err-msg{
+    color: red;
+    margin: 0;
+    text-align: start;
+  }
+
+  .or-text{
+    margin: 0 0 16px 0;
+  }
+
+
+  @media (max-width:768px){
+    .login-form{
+      width: auto;
+      position: unset;
+      transform: unset;
+    }
+    .login-form-container{
+      padding: 10px 66px;
+    }
+  }
+
+  @media (max-width:400px){
+    .login-form-container{
+      padding: 10px 36px;
+    }
+  }
