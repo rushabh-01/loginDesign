@@ -4,23 +4,27 @@ import '../styles/login.css'
 const Login = () => {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
-    const [passwordError, setPasswordError] = useState("");
-    const [emailError, setEmailError] = useState("");
+    // const [passwordError, setPasswordError] = useState("");
+    // const [emailError, setEmailError] = useState("");
     const [formSubmitted, setFormSubmitted] = useState(false);
+    // const [error,setError] = useState("")
+
+    let setError = ''
 
 
     const handleEmailChange = (e) => {
       setEmail(e.target.value);
-      setEmailError(""); // reset the email error message
+      return setError // reset the email error message
     }
     const handlePasswordChange = (e) => {
       setPassword(e.target.value);
-      setPasswordError(""); // reset the email error message
+      return setError // reset the email error message
     }
     const handleSubmit = (e) => {
         e.preventDefault()
         setFormSubmitted(true);
         console.log(email,password)
+        if(formSubmitted && email && password.length >= 6 && password) alert('submitted successfully')
     }
   return (
     <>
